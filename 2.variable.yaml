@@ -5,8 +5,8 @@
   tasks: 
     - name: print url
       debug: 
-        msg: "{{URL}}"
+        msg: "{{ URL }}"
 
     - name: print another url
       debug: 
-        msg: "{{URL}}"
+        msg: "{{ URL }}"
