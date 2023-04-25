@@ -1,7 +1,12 @@
 - name: variable example
   hosts: all
-  vars: 
+  vars:
+    URl: "cbz.google.com"  
   tasks: 
     - name: print url
       debug: 
-        msg: "google.com"
+        msg: "{{URL}}"
+
+    - name: print anathor url
+      debug: 
+        msg: "{{URL}}"
