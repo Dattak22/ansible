@@ -1,5 +1,6 @@
 - name: variable example
   hosts: all
+  vars: 
   tasks: 
     - name: print url
       debug: 
