@@ -11,12 +11,12 @@
       lineinfile:
         path: /var/www/html/index.html
         regexp: '^my'
-        state: absent 
+        state: absent
 
     - name: block in file
       blockinfile:
         path: /var/www/html/index.html
         block: |  
-          <h1> Hello World, Welcome to cloudblitz </h1>
+          <h1> hello World, Welcome to Cloudblitz </h1>
           <h2> My name is DATTA </h2>
           <h3> This is DevOps Batch </h3>
