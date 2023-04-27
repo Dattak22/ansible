@@ -1,0 +1,12 @@
+- name: register demo
+  hosts: all
+  tasks:
+    - name: get hostname
+      shell: 
+        arg: hostname
+      register: URL
+      ignore_errors: true
+  
+    - name: print hostname
+      debug:
+        msg: "Hello world"
