@@ -1,0 +1,9 @@
+- name: setfact playbook
+  hosts: all
+  tasks:
+    - name: setfact
+      set_fact: 
+        OS: redhat
+    - name: print setfact
+      debug: 
+        msg: "{{ OS }}"
