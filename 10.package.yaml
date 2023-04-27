@@ -1,4 +1,4 @@
- name: My Web Server
+- name: My Web Server
   hosts: all
   tasks:
     - name: Install web package
