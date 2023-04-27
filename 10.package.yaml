@@ -1,5 +1,6 @@
 - name: My Web Server
   hosts: all
+  become: true
   tasks:
     - name: Install web package
       package:
