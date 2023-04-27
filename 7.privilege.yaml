@@ -1,5 +1,6 @@
 - name: privilege escalation Example
   hosts: all
+  become: true
   tasks:
     - name: install httpd
       yum:
