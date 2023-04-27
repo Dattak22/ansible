@@ -20,4 +20,3 @@
         - wget
         - httpd
         - vim
-        - nginx
