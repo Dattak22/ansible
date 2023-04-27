@@ -1,0 +1,19 @@
+- name: example for tags
+  hosts: all
+  tasks: 
+  - name: task1
+    debug:
+      msg: "Hello World"
+    tags:
+      - task1
+  - name: task2
+    debug:
+      msg: "Welcome to Cloudblitz"
+    tags:
+      - demo
+      - task2
+  - name: task3
+    debug:
+      msg: "This is DevOps Batch"
+    tags:
+      - task3
