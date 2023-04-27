@@ -4,7 +4,7 @@
     - name: line in file
       lineinfile:
         path: /var/www/html/index.html
-        regexp: '^<h1>hello world, Welcome to Cloudblitz</h1>'
+        regexp: '^<h1> hello world, Welcome to Cloudblitz </h1>'
         line: 'my batch is ansible devops'        
 
     - name: line in file
