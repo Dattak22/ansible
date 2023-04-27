@@ -1,0 +1,23 @@
+- name: line in file example
+  hosts: all
+  tasks:
+    - name: line in file
+      lineinfile:
+        path: /var/www/html/index.html
+        regexp: '^<h1>'
+        line: 'my batch is ansible devops'        
+
+    - name: line in file
+      lineinfile:
+        path: /var/www/html/index.html
+        regexp: '^my'
+        state: absent 
+
+    - name: block in file
+      blockinfile:
+        path: /var/www/html/index.html
+        marker: "<!-- {mark} ANSIBLE MANAGED BLOCK -->"
+        block: |
+          <h1> Hello World, Welcome to cloudblitz </h1>
+          <h2> My name is DATTA </h2>
+          <h3> This is DevOps Batch </h3>
