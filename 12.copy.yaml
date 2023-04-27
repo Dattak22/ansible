@@ -1,0 +1,16 @@
+- name: my web server
+  hosts: all
+  tasks:
+    - name: install httpd
+      yum:
+        name: httpd
+        state: latest
+    - name: start and enable httpd
+      service:
+        name: httpd
+        state: started
+        enabled: true
+    - name: deploy html application
+      copy:
+        src: ./index.html
+        dest: /var/www/html/index.html
