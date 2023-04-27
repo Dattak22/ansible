@@ -1,0 +1,17 @@
+- name: Condition Example
+  hosts: all
+  tasks:
+    - name: print CENTOS
+      debug:
+        msg: "Hi This is CentOS"
+      when: ansible_distribution == "CentOS"
+    
+    - name: print UBUNTU
+      debug:
+        msg: "Welcome this Ubuntu"
+      when: ansible_distribution == "Ubuntu"
+
+    - name: print AMazon
+      debug:
+        msg: "Welcome to Amazon"
+      when: (ansible_distribution == "Amazon") or (ansible_distribution_version == "2")
