@@ -1,0 +1,7 @@
+- name: webserver role
+  hosts: web
+  roles:
+    # - web-server-role
+    # - app-server-role
+    # - roleB
+    - multi-os
