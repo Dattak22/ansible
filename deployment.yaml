@@ -1,4 +1,4 @@
 - name: webserver role
-  hosts: web
+  hosts: all
   roles:
     - web-server-role
