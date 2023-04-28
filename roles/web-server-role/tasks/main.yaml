@@ -1,21 +1,15 @@
 - name: install httpd
-  package:
-    name: "{{ PKG }}"
+  yum:
+    name: httpd
     state: present
-
-- name: proxy conf
-  copy:
-    src: proxy.conf
-    dest: /etc/httpd/conf.d/proxy.conf
-  notify: 
-    - restart service
-
-- name: permissive selinux
-  selinux:
-    policy: targeted
-    state: permissive
 
 - name: deploy application
   copy:
     src: index.html
     dest: /var/www/html/index.html
+
+- name: start service
+  systemd:
+    name: httpd
+    state: started
+    enabled: true
