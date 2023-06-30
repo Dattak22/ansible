@@ -6,11 +6,13 @@
     - name: print url
       debug: 
         msg: "{{ URL }}"
+
     - name: print 2nd url
       debug: 
         msg: "{{ URL }}"  
       vars: 
         URL: "local.google.com"
     - name: print 3rd url
+    
       debug: 
         msg: "{{ URL }}" 
