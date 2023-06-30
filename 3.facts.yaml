@@ -1,3 +1,4 @@
 - name: gathering facts
   hosts: all
-    print: os
+  tasks:
+  
