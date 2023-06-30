@@ -5,7 +5,7 @@
       shell: 
         arg: hostname
       register: URL
-      
+       ignore_errors: true
     
   
     - name: print hostname
