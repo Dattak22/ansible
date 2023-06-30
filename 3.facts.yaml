@@ -1,7 +1,1 @@
 - name: gathering facts
-  hosts: all
-  tasks:
-    - name: print OS
-      debug: 
-        msg: "{{ ansible_distribution }}"
-          
