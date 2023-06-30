@@ -7,5 +7,5 @@
 
       - name: print IP
         debug:
-          msg: "{{ ansible_default_ipv4. }}"
+          msg: "{{ ansible_default_ipv4.address }}"
     
