@@ -10,4 +10,7 @@
           msg: "{{ ansible_default_ipv4.netmask }}"
 
           
+      - name: print IP
+        debug:
+          msg: "{{ ansible_default_ipv4. }}"
     
