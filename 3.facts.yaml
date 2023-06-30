@@ -3,4 +3,4 @@
   tasks:
     name: print OS
         debug:
-        msg: "{{ w_timestamp_filters.ipv4.address }}"
+        msg: "{{  }}"
