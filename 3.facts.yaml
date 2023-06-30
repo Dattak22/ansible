@@ -3,6 +3,6 @@
   tasks:
       - name: print OS
         debug:
-        msg: "{{ ansible_distribution }}"
+          msg: "{{ ansible_distribution }}"
 
     
