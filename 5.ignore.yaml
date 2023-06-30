@@ -12,6 +12,6 @@
         msg: "Hello World"
 
 
-    - name: print hostname
+    - name: print IP
       debug:
         msg: "Hello World"
