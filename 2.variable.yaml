@@ -12,7 +12,7 @@
         msg: "{{ URL }}"  
       vars: 
         URL: "local.google.com"
-        
+         
     - name: print 3rd url
       debug: 
         msg: "{{ URL }}" 
