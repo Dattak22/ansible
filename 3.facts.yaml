@@ -3,4 +3,4 @@
   tasks:
     -name: print os
       debug:
-      
+        msg: "{}"
