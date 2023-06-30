@@ -1,6 +1,6 @@
 - name: gathering facts
   hosts: all
   tasks:
-    name: print os
+    name: print OS
         debug:
-        msg: "{{ hw_timestamp_filters.ipv4.address }}"
+        msg: "{{ w_timestamp_filters.ipv4.address }}"
