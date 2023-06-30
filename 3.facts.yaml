@@ -1,6 +1,6 @@
 - name: gathering facts
   hosts: all
   tasks:
-    -  name: print os
+    name: print os
         debug:
         msg: "{{ ansible_distribution }}"
