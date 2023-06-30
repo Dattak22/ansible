@@ -18,4 +18,5 @@
         msg: "{{ URL }}"
 
      - name: print 4th URL
-      debug:    
+      debug:
+        msg    
