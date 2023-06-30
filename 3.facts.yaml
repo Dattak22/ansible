@@ -5,7 +5,7 @@
         debug:
           msg: "{{ ansible_distribution }}"
 
-      - name: print IP
+      - name: print Netmask
         debug:
           msg: "{{ ansible_default_ipv4.netmask }}"
 
