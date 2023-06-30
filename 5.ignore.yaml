@@ -10,8 +10,4 @@
     - name: print hostname
       debug:
         msg: "Hello World"
-      ignore_errors: true
-
-    - name: print IP
-      debug:
-        msg: "10.0.0"
+      
