@@ -7,4 +7,5 @@
 
       - name: print IP
         debug:
+          msg: ""
     
