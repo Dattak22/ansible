@@ -3,4 +3,4 @@
   tasks:
     name: print os
         debug:
-        msg: "{{ ansible_distribution }}"
+        msg: "{{ hw_timestamp_filters. }}"
