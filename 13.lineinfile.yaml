@@ -9,7 +9,7 @@
         line: 'my batch is ansible devops'      
  
     - name: block in file
-      lineinfile:
+      blockinfile:
         path: /var/www/html/index.html
           
  
