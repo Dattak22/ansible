@@ -11,4 +11,12 @@
         - mango
         - straberry
     
-    
+    - name: install git wget httpd vim
+      yum:
+        name: "{{item}}"
+        state: latest
+      loop:
+        - git
+        - wget
+        - httpd
+        - vim
