@@ -11,5 +11,6 @@
     - name: block in file
       blockinfile:
         path: /var/www/html/index.html
-        blok
+        block: 
+        
  
