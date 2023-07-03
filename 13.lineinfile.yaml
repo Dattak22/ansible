@@ -11,6 +11,5 @@
     - name: line in file
       lineinfile:
         path: /var/www/html/index.html
-        regexp: '^my'
-        state: absent      
+          
  
