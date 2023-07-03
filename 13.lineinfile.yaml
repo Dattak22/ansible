@@ -12,5 +12,6 @@
       blockinfile:
         path: /var/www/html/index.html
         block: 
-          <h1> hello world this is c
+          <h1> hello world this is cloudblitz </h1>
+          
  
