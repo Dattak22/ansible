@@ -7,3 +7,4 @@
         path: /var/www/html/index.html
         regexp: '<h1>'
         line: 'my batch is ansible devops'      
+ 
