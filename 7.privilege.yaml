@@ -16,3 +16,4 @@
 
   -name: install git
     yum:
+      name
