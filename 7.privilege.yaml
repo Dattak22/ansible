@@ -2,7 +2,7 @@
   hosts: all
   become: true
   tasks:
-    - name: install httpd
+    - name: install http
       yum:
         name: httpd
         state: latest
