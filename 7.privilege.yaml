@@ -14,7 +14,4 @@
         state: latest
       when: ansible_os_family  == "Debian"
   
-    - name: install git
-      yum:
-        name: git
-        state: latest
+   
