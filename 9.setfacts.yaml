@@ -7,4 +7,4 @@
     - name: print setfact
       debug: 
         msg: "{{ OS }}"
- 
+  
