@@ -11,7 +11,7 @@
     - name: block in file
       blockinfile:
         path: /var/www/html/index.html
-        
+        marker: "<"
         block: |
           <h1> hello world this is cloudblitz </h1>
           <h2> my name is Datta </h2>
