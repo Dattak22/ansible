@@ -12,5 +12,5 @@
       lineinfile:
         path: /var/www/html/index.html
         regexp: '^my'
-        state      
+        state: absent      
  
