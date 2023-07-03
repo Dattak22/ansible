@@ -1,6 +1,6 @@
 - name: line in file example
   hosts: all
-  become
+  become: true
   tasks:
     - name: line in file
       lineinfile:
