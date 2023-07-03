@@ -16,4 +16,15 @@
 
   -name: install git
     yum:
-      name
+      name: on: 
+
+      
+      
+      jobs:
+        :
+          runs-on: 
+      
+          steps:
+            - name: 
+              run: 
+      
