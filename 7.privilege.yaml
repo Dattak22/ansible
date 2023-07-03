@@ -16,13 +16,4 @@
 
   -name: install git
     yum:
-      name: on: 
-      
-      jobs:
-        :
-          runs-on: 
-      
-          steps:
-            - name: 
-              run: 
-      
+      name: git
