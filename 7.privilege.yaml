@@ -17,8 +17,6 @@
   -name: install git
     yum:
       name: on: 
-
-      
       
       jobs:
         :
