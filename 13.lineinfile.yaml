@@ -11,6 +11,6 @@
     - name: line in file
       lineinfile:
         path: /var/www/html/index.html
-        regexp: 'my'
+        regexp: '^my'
         line: 'my batch is ansible devops'      
  
