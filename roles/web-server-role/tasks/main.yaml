@@ -1,6 +1,6 @@
 - name: install httpd
-  package: 
-    name: "{{PKG}}"
+  package:
+    name: "{{ PKG }}"
     state: present
 
 - name: proxy conf
@@ -10,14 +10,12 @@
   notify: 
     - restart service
 
+- name: permissive selinux
+  selinux:
+    policy: targeted
+    state: permissive
 
 - name: deploy application
   copy:
     src: index.html
     dest: /var/www/html/index.html
-
-- name: start service  
-  systemd: 
-    name: " {{PKG}} "
-    state: restarted
-    enabled: true
