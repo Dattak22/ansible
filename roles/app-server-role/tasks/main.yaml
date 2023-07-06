@@ -10,9 +10,9 @@
 
 #- name: extract tomcat
 #  unarchive:
-#    src: "{{ URL }}"
-#    dest: /opt
-#   remote_src: true
+    src: "{{ URL }}"
+    dest: /opt
+   remote_src: true
 
 - name: upload tomcat daemon
   copy:
@@ -22,7 +22,7 @@
   notify: 
     - restart tomcat
 
-#- name: deploy application
+- name: deploy application
   get_url:
     url: http://s3-us-west-2.amazonaws.com/studentapi-cit/student.war
     dest: /opt/{{TOMCAT_DIR}}/webapps/
