@@ -20,7 +20,8 @@
     dest: /etc/init.d/tomcatd
     mode: 0755
 
-- name: 
+- name: reload daemon
+
 
 
 
