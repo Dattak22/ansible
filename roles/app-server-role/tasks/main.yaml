@@ -4,7 +4,8 @@
     state: latest
 
 - name: download tomcat 
-  get_url: "{{ URL }}"
+  get_url:
+    url: "{{ URL }}"
   dest: /opt
 
 - name: extract tomcat
