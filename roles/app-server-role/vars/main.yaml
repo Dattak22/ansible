@@ -1,4 +1,4 @@
-URL: "https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.88/bin/apache-tomcat-8.5.88.tar.gz"
+URL: ""
 TOMCAT_DIR: "{{ URL | urlsplit('path') |  basename | regex_replace('.tar.gz','') }}"
 DB_USER: "admin"
 DB_PASSWORD: !vault |
