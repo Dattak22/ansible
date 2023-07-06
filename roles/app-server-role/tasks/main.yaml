@@ -12,7 +12,7 @@
 #  unarchive:
 #    src: "{{ URL }}"
 #    dest: /opt
-#  remote_src: true
+#   remote_src: true
 
 - name: upload tomcat daemon
   copy:
