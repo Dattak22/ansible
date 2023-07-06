@@ -12,4 +12,5 @@
 - name: start service  
   systemd: 
     name:
-    state
+    state:
+    enable:
