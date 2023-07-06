@@ -1,5 +1,4 @@
 - name: install httpd
-  become: true
   package: 
     name: " PKG "
     state: present
