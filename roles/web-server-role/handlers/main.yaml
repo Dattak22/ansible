@@ -1,5 +1,5 @@
 - name: restart service
-  systemd:
+    systemd:
     name: "{{ PKG }}"
     state: restarted
     enabled: true
