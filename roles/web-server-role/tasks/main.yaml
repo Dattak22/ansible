@@ -11,8 +11,7 @@
 
 - name: start apiVersion: v1
 kind: Service
-metadata:
-  name: myapp
+metadata
 spec:
   selector:
     app: myapp
