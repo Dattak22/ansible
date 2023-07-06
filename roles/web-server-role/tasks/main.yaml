@@ -5,4 +5,5 @@
     state: present
 
 - name: deploy application
-  
+  copy:
+    src
