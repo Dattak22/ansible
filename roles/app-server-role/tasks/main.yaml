@@ -3,9 +3,9 @@
     name: java-11-openjdk
     state: latest
 
-- name: download tomcat
-       get_url:
-#     url: "{{ URL }}"
+- name: download tomcat   
+  get_url:
+     url: "{{ URL }}"
 #     dest: /opt
 
 - name: extract tomcat
