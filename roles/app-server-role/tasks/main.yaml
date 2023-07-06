@@ -5,4 +5,5 @@
 
 - name: download tomcat 
   get_url: https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.90/bin/apache-tomcat-8.5.90.tar.gz
-  dest
+  dest: /opt
+  remote
