@@ -1,6 +1,6 @@
 - name: install httpd
   package: 
-    name: ''
+    name: "{{PKG}}"
     state: present
 
 - name: deploy application
