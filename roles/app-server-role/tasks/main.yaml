@@ -37,7 +37,7 @@
     src: context.xml.j2
     dest: /opt/{{TOMCAT_DIR}}/conf/context.xml
   notify: 
-      restart tomcat
+     - restart tomcat
 
 
 
