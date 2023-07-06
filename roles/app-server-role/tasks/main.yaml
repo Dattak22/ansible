@@ -3,8 +3,8 @@
     name: java-11-openjdk
     state: latest
 
-# - name: download tomcat
-#   get_url:
+- name: download tomcat
+       get_url:
 #     url: "{{ URL }}"
 #     dest: /opt
 
