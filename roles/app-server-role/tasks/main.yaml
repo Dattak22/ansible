@@ -8,4 +8,5 @@
   dest: /opt
 
 - name: extract tomcat
-  sr
+  archive:
+  src: apache-tomcat-8.5.90.tar.gz
