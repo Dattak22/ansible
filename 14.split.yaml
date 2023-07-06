@@ -1,0 +1,11 @@
+- name: split function
+  hosts: all
+  tasks:
+    - name: get path from url
+      debug:
+        msg: "{{ 'https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.88/bin/apache-tomcat-8.5.88.tar.gz' | urlsplit('path') |  basename | regex_replace('.tar.gz','') }}"
+      register: PATH
+
+    - name: get file from Path
+      debug:
+        msg: "{{ '/tomcat/tomcat-8/v8.5.88/bin/apache-tomcat-8.5.88.tar.gz' | basename }}"
