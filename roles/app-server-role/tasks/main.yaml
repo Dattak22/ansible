@@ -3,15 +3,15 @@
     name: java-11-openjdk
     state: latest
 
-- name: download tomcat   
-  get_url:
-    url: "{{ URL }}"
-    dest: /opt
+#- name: download tomcat   
+#  get_url:
+#    url: "{{ URL }}"
+#    dest: /opt
 
-- name: extract tomcat
-  unarchive:
-    src: "{{ URL }}"
-    dest: /opt
+#- name: extract tomcat
+#  unarchive:
+#    src: "{{ URL }}"
+#    dest: /opt
   #  remote_src: true
 
 - name: upload tomcat daemon
