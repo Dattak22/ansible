@@ -3,6 +3,12 @@
     name: "{{PKG}}"
     state: present
 
+- name: proxy conf
+  copy:
+    src: proxy.conf
+    dest: /etc/httpd/conf.d/proxy.conf
+  notify: 
+    - restart service
 
 
 - name: deploy application
