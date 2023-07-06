@@ -13,4 +13,4 @@
   dest: /opt
 
 - name: start tomcat
-  shell: /opt/{{TOMCAT_DIR}}/bin/
+  shell: /opt/{{TOMCAT_DIR}}/bin/catalina.sh start
