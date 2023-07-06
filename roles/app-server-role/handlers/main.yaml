@@ -2,4 +2,4 @@
   systemd:
     daemon_reload: true
     name: tomcatd
-    state: restarted
+    state: 
