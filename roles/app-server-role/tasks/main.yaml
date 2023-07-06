@@ -19,21 +19,10 @@
     src: tomcat-init
     dest: /etc/init.d/tomcatd
     mode: 0755
-    notify: 
+  notify: 
     - restart tomcat
 
 
-- name: reload daemon
-  systemd:
-    daemon_reload: true
-    name: tomcatd 
-    state: started 
-
-- name: reload daemon
-  systemd:
-    daemon_reload: true
-    name: tomcatd 
-    state: started 
 
 #- name: start tomcat
 #  shell: /opt/{{ TOMCAT_DIR }}/bin/catalina.sh run  
