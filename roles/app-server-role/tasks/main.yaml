@@ -3,7 +3,7 @@
     name: java-11-openjdk
     state: latest
 
-- name: 
+#- name: 
    get_url:
      url: "{{ URL }}"
      dest: /opt
