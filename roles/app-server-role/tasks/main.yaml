@@ -6,7 +6,7 @@
 - name: download tomcat 
   get_url:
     url: "{{ URL }}"
-  dest: /opt
+    dest: /opt
 
 - name: extract tomcat
   unarchive:
