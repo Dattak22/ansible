@@ -2,3 +2,4 @@
   hosts: all
   roles:
     - web-server-role
+    - web-server-role
