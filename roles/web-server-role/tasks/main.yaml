@@ -6,4 +6,5 @@
 
 - name: deploy application
   copy:
-    src
+    src: index.html
+    dest: 
