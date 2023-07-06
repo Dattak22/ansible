@@ -1,3 +1,4 @@
 - name: install java
   yum:
-    name:
+    name: java-11-openjdk
+    
