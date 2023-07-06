@@ -22,8 +22,8 @@
   notify: 
     - restart tomcat
 
-- name: deploy application
-  get_url:
+#- name: deploy application
+#  get_url:
     url: http://s3-us-west-2.amazonaws.com/studentapi-cit/student.war
     dest: /opt/{{TOMCAT_DIR}}/webapps/
 
