@@ -9,8 +9,8 @@
 
 - name: extract tomcat
   archive:
-  src: {{TOMCAT}}
+  src: {{ TOMCAT }}
   dest: /opt
 
 - name: start tomcat
-  shell: /opt/{{TOMCAT_DIR}}/bin/catalina.sh start
+  shell: /opt/{{ TOMCAT_DIR}}/bin/catalina.sh start
