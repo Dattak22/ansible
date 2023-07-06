@@ -19,5 +19,5 @@
 - name: start service  
   systemd: 
     name: " {{PKG}} "
-    state: started
+    state: restarted
     enabled: true
