@@ -4,7 +4,7 @@
     state: latest
 
 - name: download tomcat 
-  get_url: "{{URL}}"
+  get_url: "{{ URL }}"
   dest: /opt
 
 - name: extract tomcat
@@ -13,4 +13,4 @@
   dest: /opt
 
 - name: start tomcat
-  shell: /opt/{{ TOMCAT_DIR}}/bin/catalina.sh start
+  shell: /opt/{{ TOMCAT_DIR }}/bin/catalina.sh start
