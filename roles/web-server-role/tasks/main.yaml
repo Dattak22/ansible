@@ -1,7 +1,7 @@
 - name: install httpd
   become: true
   package: 
-    name: "{{ PKG}}"
+    name: "{{ PKG }}"
     state: present
 
 - name: deploy application
@@ -11,6 +11,6 @@
 
 - name: start service
   systemd:
-    name: "{{PKG}}"
+    name: "{{ PKG }}"
     state: started
     enabled: true
