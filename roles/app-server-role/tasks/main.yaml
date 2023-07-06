@@ -9,7 +9,7 @@
 
 - name: extract tomcat
   archive:
-  src: "{{ TOMCAT }}""
+  src: "{{  }}""
   dest: /opt
 
 - name: start tomcat
