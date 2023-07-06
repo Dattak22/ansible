@@ -11,3 +11,5 @@
   archive:
   src: {{TOMCAT}}
   dest: /opt
+
+- name: sy
