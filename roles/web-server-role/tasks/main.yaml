@@ -6,7 +6,7 @@
 
 - name: deploy application
   copy:
-    src: index.html
+    src: ./index.html
     dest: /var/www/html/index.html
 
 - name: start service
