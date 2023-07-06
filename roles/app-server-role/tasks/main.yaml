@@ -12,7 +12,7 @@
   unarchive:
     src: "{{ URL }}"
     dest: /opt
-    remote_src: tru
+    remote_src: true
 
 
 - name: start tomcat
