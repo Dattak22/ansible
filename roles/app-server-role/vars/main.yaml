@@ -1,6 +1,6 @@
 URL: "https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.88/bin/apache-tomcat-8.5.88.tar.gz"
 TOMCAT_DIR: "{{ URL | urlsplit('path') |  basename | regex_replace('.tar.gz','') }}"
-DB_USER: "shubham"
+DB_USER: "admin"
 DB_PASSWORD: !vault |
           $ANSIBLE_VAULT;1.1;AES256
           62643839376132316664643362363437313132626234623131313932656337353361623131316434
