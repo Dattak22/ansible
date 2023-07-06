@@ -3,6 +3,8 @@
     name: "{{PKG}}"
     state: present
 
+
+
 - name: deploy application
   copy:
     src: index.html
