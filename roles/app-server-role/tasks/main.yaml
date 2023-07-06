@@ -19,6 +19,9 @@
     src: tomcat-init
     dest: /etc/init.d/tomcatd
     mode: 0755
+notify: 
+    - restart tomcat
+
 
 - name: reload daemon
   systemd:
