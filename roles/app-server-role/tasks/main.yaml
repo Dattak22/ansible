@@ -12,4 +12,4 @@
   src: {{TOMCAT}}
   dest: /opt
 
-- name: sy
+- name: start tomcat
