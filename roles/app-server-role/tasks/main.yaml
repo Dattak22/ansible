@@ -8,9 +8,10 @@
   dest: /opt
 
 - name: extract tomcat
-  archive:
+  unarchive:
   src: "{{ URL }}"
   dest: /opt
+  remote
 
 - name: start tomcat
   shell: /opt/{{ TOMCAT_DIR }}/bin/catalina.sh start
