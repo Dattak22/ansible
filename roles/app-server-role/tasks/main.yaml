@@ -4,5 +4,5 @@
     state: latest
 
 - name: download tomcat 
-  get_url: "{{}}"
+  get_url: "{{URL}}"
   dest: /opt
