@@ -8,4 +8,4 @@
 
     - name: get file from Path
       debug:
-        msg: "{{ '/tomcat/tomcat-8/v8.5.88/bin/apache-tomcat-8.5.88.tar.gz' | basename }}"
+        msg: "{{ '/tomcat/tomcat-8/v8.5.88/bin/apache-tomcat-8.5.88.tar.gz' | basename }}"  
