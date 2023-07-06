@@ -24,7 +24,7 @@
   systemd:
     daemon-reload: true
     name: tomcatd 
-    state: start
+    state: started
 
 
 
