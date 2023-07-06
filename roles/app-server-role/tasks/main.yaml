@@ -43,4 +43,4 @@
 
 
 - name: start tomcat
-   shell: /opt/{{ TOMCAT_DIR }}/bin/catalina.sh run
+  shell: /opt/{{ TOMCAT_DIR }}/bin/catalina.sh run
