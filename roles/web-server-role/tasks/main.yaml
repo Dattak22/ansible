@@ -1,6 +1,6 @@
 - name: install httpd
-  yum: 
-    name: httpd
+  package: 
+    name: ''
     state: present
 
 - name: deploy application
