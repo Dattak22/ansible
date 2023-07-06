@@ -4,4 +4,4 @@
     name: " PKG "
     state: present
 
-- name:
+- name: deploy application
