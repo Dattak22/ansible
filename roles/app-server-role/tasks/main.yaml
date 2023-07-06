@@ -1,12 +1,12 @@
-- name: install java
+ name: install java
   yum:
     name: java-11-openjdk
     state: latest
 
-#- name: download tomcat 
-#  get_url:
-#    url: "{{ URL }}"
-#    dest: /opt
+# - name: download tomcat
+#   get_url:
+#     url: "{{ URL }}"
+#     dest: /opt
 
 - name: extract tomcat
   unarchive:
@@ -27,6 +27,20 @@
     url: http://s3-us-west-2.amazonaws.com/studentapi-cit/student.war
     dest: /opt/{{TOMCAT_DIR}}/webapps/
 
+- name: upload mysql-connector library
+  copy:
+    src: mysql-connector.jar
+    dest: /opt/{{TOMCAT_DIR}}/lib/mysql-connector.jar
 
-#- name: start tomcat
-#  shell: /opt/{{ TOMCAT_DIR }}/bin/catalina.sh run  
+- name: configure database in tomcat
+  template:
+    src: context.xml.j2
+    dest: /opt/{{TOMCAT_DIR}}/conf/context.xml
+  notify: 
+    - restart tomcat
+
+
+
+
+# - name: start tomcat
+#   shell: /opt/{{ TOMCAT_DIR }}/bin/catalina.sh run
