@@ -5,6 +5,7 @@
 
 - name: download tomcat 
   get_url:
+    url: "{{ URL }}"
   #  dest: /opt
 
 - name: extract tomcat
