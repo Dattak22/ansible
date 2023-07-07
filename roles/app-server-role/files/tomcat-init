@@ -8,7 +8,7 @@
 TOMCAT_USER=root
 TOMCAT_DIR=$(ls -d /opt/apache*)
 STARTUP=$TOMCAT_DIR/opt/bin/startup.sh
-SHUTDOWN=$TOMCAT_DIR/optbin/shutdown.sh
+SHUTDOWN=$TOMCAT_DIR/opt/bin/shutdown.sh
 
 start() {
   ps -ef | grep java | grep $TOMCAT_DIR | grep -v grep    &>/dev/null
