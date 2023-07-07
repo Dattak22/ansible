@@ -18,7 +18,7 @@
   copy:
     src: tomcat-init
     dest: /etc/init.d/tomcatd
-    mode: 
+    mode: 755
    
 
 - name: deploy application
