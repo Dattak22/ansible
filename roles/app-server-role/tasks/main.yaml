@@ -32,7 +32,7 @@
     src: mysql-connector.jar
     dest: /opt/{{ TOMCAT_DIR }}/lib/mysql-connector.jar
 
-#- name: configure database in tomcat
+- name: configure database in tomcat
   template:
     src: context.xml.j2
     dest: /opt/{{ TOMCAT_DIR }}/conf/context.xml
