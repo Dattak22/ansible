@@ -20,7 +20,7 @@
     dest: /etc/init.d/tomcatd
     mode: 755
   notify: 
-     - restart tomcat
+    - restart tomcat
 
 - name: deploy application
   get_url:
