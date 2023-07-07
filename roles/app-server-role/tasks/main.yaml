@@ -4,9 +4,9 @@
     state: latest
 
 - name: download tomcat
-    get_url:
-     url: "{{ URL }}"
-     dest: /opt
+   get_url:
+    url: "{{ URL }}"
+    dest: /opt
 
 - name: extract tomcat
   unarchive:
