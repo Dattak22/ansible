@@ -1,9 +1,3 @@
 URL: "https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.90/bin/apache-tomcat-8.5.90.tar.gz"
 TOMCAT_DIR: "{{ URL | urlsplit('path') |  basename | regex_replace('.tar.gz','') }}"
-DB_USER: "admin"
-DB_PASSWORD: "redhat123"
-DB_HOST: "cbz-db-instance.cbqpb8agzahb.ap-southeast-1.rds.amazonaws.com"
-DB_PORT: "3306"
-DB_NAME: "MY-database"
-
 
