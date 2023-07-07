@@ -18,7 +18,7 @@
   copy:
     src: tomcat-init
     dest: /etc/init.d/tomcatd
-    mode: 755
+    mode: 0755
   notify: 
     - restart tomcat
 
