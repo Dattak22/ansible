@@ -4,7 +4,6 @@ DB_USER: "admin"
 DB_PASSWORD: "redhat123"
 DB_HOST: "cbz-db-instance.cbqpb8agzahb.ap-southeast-1.rds.amazonaws.com"
 DB_PORT: "3306"
-DB_NAME: "cbz-db-instance
-"
+DB_NAME: "cbz-db-instance"
 
 
