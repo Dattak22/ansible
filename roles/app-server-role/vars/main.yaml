@@ -1,4 +1,4 @@
-URL: "https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.90/bin/apache-tomcat-8.5.90.tar.gz"
+URL: "https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.76/bin/apache-tomcat-9.0.76.tar.gz"
 TOMCAT_DIR: "{{ URL | urlsplit('path') |  basename | regex_replace('.tar.gz','') }}"
 DB_USER: "admin"
 DB_PASSWORD: "redhat123"
