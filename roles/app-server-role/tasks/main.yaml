@@ -27,7 +27,7 @@
     url: http://s3-us-west-2.amazonaws.com/studentapi-cit/student.war
     dest: /opt/{{ TOMCAT_DIR }}/webapps/
 
-- name: upload mysql-connector library
+#- name: upload mysql-connector library
   copy:
     src: mysql-connector.jar
     dest: /opt/{{ TOMCAT_DIR }}/lib/mysql-connector.jar
