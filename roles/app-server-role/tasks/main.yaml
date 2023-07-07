@@ -38,7 +38,7 @@
 - name: reload daemon
   systemd:
     daemon_reload: true
-    name: TOMCAT_DIR
+    name: tomcatd
 
 
 
