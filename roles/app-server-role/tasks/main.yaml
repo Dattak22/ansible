@@ -1,0 +1,46 @@
+- name: install java
+  yum:
+    name: java-11-openjdk
+    state: latest
+
+# - name: download tomcat
+#   get_url:
+#     url: "{{ URL }}"
+#     dest: /opt
+
+- name: extract tomcat
+  unarchive:
+    src: "{{ URL }}"
+    dest: /opt
+    remote_src: true
+
+- name: upload tomcat daemon
+  copy:
+    src: tomcat-init
+    dest: /etc/init.d/tomcatd
+    mode: 0755
+  notify: 
+    - restart tomcat
+
+- name: deploy application
+  get_url:
+    url: http://s3-us-west-2.amazonaws.com/studentapi-cit/student.war
+    dest: /opt/{{TOMCAT_DIR}}/webapps/
+
+- name: upload mysql-connector library
+  copy:
+    src: mysql-connector.jar
+    dest: /opt/{{TOMCAT_DIR}}/lib/mysql-connector.jar
+
+- name: configure database in tomcat
+  template:
+    src: context.xml.j2
+    dest: /opt/{{TOMCAT_DIR}}/conf/context.xml
+  notify: 
+    - restart tomcat
+
+
+
+
+# - name: start tomcat
+#   shell: /opt/{{ TOMCAT_DIR }}/bin/catalina.sh run
