@@ -8,11 +8,11 @@
 #    url: "{{ URL }}"
 #    dest: /opt
 
-- name: extract tomcat
-  unarchive:
-    src: "{{ URL }}"
-    dest: /opt
-    remote_src: true
+#- name: extract tomcat
+#  unarchive:
+#    src: "{{ URL }}"
+#    dest: /opt
+#    remote_src: true
 
 - name: upload tomcat daemon
   copy:
