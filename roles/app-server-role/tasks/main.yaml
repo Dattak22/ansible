@@ -18,9 +18,7 @@
   copy:
     src: tomcat-init
     dest: /etc/init.d/tomcatd
-    mode: 755
-  notify: 
-    - restart tomcat
+   
 
 - name: deploy application
   get_url:
