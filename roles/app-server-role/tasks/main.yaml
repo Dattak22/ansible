@@ -37,7 +37,8 @@
  
 - name: reload daemon
   systemd:
-    daemon_reload= 
+    daemon_reload: true
+    
 
 
 
