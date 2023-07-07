@@ -42,5 +42,5 @@
 
 
 
-#- name: start tomcat
-#  shell: /opt/{{ TOMCAT_DIR }}/bin/catalina.sh run
+- name: start tomcat
+  shell: /opt/{{ TOMCAT_DIR }}/bin/catalina.sh run
