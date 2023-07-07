@@ -11,7 +11,7 @@
 #- name: extract tomcat
 #  unarchive:
 #    src: "{{ URL }}"
-#    dest: /opt
+    dest: /opt
     remote_src: true
 
 - name: upload tomcat daemon
