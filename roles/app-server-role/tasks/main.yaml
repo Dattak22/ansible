@@ -37,7 +37,7 @@
  
 - name: reload daemon
   systemd:
-    daemon_relo
+    daemon_reload= 
 
 
 
