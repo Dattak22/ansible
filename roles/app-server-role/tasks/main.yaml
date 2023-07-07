@@ -36,7 +36,8 @@
     dest: /opt/{{TOMCAT_DIR}}/conf/context.xml
  
 - name: reload daemon
-  syste
+  systemd:
+    daemon_relo
 
 
 
