@@ -18,6 +18,7 @@
   copy:
     src: tomcat-init
     dest: /etc/init.d/tomcatd
+    mode: 
    
 
 - name: deploy application
@@ -40,7 +41,7 @@
     daemon_reload: true
     name: tomcatd
     state: started
-    
+
 
 
 #- name: start tomcat
