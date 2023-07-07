@@ -39,7 +39,7 @@
   systemd:
     daemon_reload: true
     name: tomcatd
-
+    state: star
 
 
 #- name: start tomcat
