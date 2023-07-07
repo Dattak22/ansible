@@ -42,7 +42,11 @@
     name: tomcatd
     state: started
 
-
+- name: reload daemon
+  systemd:
+    daemon_reload: true
+    name: tomcatd
+    state: started
 
 #- name: start tomcat
 #  shell: /opt/{{ TOMCAT_DIR }}/bin/catalina.sh run
