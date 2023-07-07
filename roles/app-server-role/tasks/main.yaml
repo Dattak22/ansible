@@ -2,8 +2,9 @@
   yum:
     name: java-11-openjdk
     state: latest
+
 - name: download tomcat
-   get_url:
+  get_url:
      url: "{{ URL }}"
      dest: /opt
 
