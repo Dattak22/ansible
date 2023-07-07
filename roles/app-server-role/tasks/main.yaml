@@ -8,9 +8,9 @@
 #    url: "{{ URL }}"
 #    dest: /opt
 
-#- name: extract tomcat
-#  unarchive:
-#    src: "{{ URL }}"
+- name: extract tomcat
+  unarchive:
+    src: "{{ URL }}"
     dest: /opt
     remote_src: true
 
